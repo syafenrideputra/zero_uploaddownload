@@ -1,8 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
-func main() {
-	fmt.Println("halo test")
+func uploadFile(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Uploading File")
+}
+
+func setupRoutes()  {
+	http.HandleFunc("/upload", uploadFile)
+	http.ListenAndServe(":80",nil)
+
+}
+
+func main()  {
+	fmt.Println("Go File Upload Download Ade")
 
 }
