@@ -46,7 +46,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 
 func setupRoutes()  {
 	http.HandleFunc("/upload", uploadFile)
-	http.ListenAndServe("localhost:8080",nil)
+	http.ListenAndServe("172.31.31.98:8080",nil)
 
 }
 
