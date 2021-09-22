@@ -51,6 +51,6 @@ func setupRoutes()  {
 }
 
 func main()  {
-	fmt.Println("Upload Test Webpagek")
+	fmt.Println("Upload Test Webpage")
 
 }
