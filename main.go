@@ -46,11 +46,11 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 
 func setupRoutes()  {
 	http.HandleFunc("/upload", uploadFile)
-	http.ListenAndServe("172.31.31.98:8080",nil)
+	http.ListenAndServe(":8080",nil)
 
 }
 
 func main()  {
 	fmt.Println("Upload Test Webpage")
-
+	setupRoutes()
 }
