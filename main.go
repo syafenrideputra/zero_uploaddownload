@@ -48,7 +48,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 
 func setupRoutes() {
 	http.HandleFunc("/upload", uploadFile)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":9011", nil)
 }
 
 func main() {
